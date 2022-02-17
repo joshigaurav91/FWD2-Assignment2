@@ -15,7 +15,7 @@ function App() {
       <UserEngage />
       <Footer />
     </div>
-  );
+  ); 
 }
 
 export default App;

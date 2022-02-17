@@ -1,9 +1,9 @@
-function Footer() {
+function Form() {
     return (
         <div>
-            <p>COPYRIGHT 2017. ALL rights reserved.</p>
+
         </div>
     )
 }
 
-export default Footer;
+export default Form;
