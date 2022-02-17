@@ -8,7 +8,7 @@ function ProductAdvisor() {
   return (
       
     <div className='customize-order-wrapper'>
-        <h2>Customized Per Order</h2>
+        <h2>CUSTOMIZED PER ORDER</h2>
         <p>Just as no two treatment plants are the same, no two of our screening, 
             grit handling or sludge thickening products are either. We'll help determine exactly what you need.</p>
         <div className='machine-cards-container'>
