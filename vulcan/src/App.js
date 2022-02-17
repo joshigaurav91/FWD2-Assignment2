@@ -8,6 +8,11 @@ function App() {
     <div className="wrapper">
       <Header />
       <Nav />
+
+      <About />
+      <Video />
+      <Form />
+      <UserEngage />
       <Footer />
     </div>
   );
