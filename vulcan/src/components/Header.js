@@ -1,10 +1,10 @@
 import Hamburger from './Hamburger';
-import "../images/logo-white-vulcan.svg"
+import Icon from '../images/logo-white-vulcan.js';
 
 function Header() {
     return (
         <header>
-        <img src="../images/logo-white-vulcan.svg" alt="Vulcan"/>
+        <Icon />
         <Hamburger />
         </header>
     )
