@@ -3,6 +3,7 @@ import Nav from '../src/components/Nav';
 import Footer from '../src/components/Footer';
 import './App.css';
 import ProductAdvisor from './components/ProductAdvisor';
+import CustomizePerOrder from './components/CustomizePerOrder';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Header />
         <Nav />
         <ProductAdvisor />
+        <CustomizePerOrder />
         <Footer />
     </div>
   );
