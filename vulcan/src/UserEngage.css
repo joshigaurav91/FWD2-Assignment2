@@ -1,0 +1,46 @@
+/* UserEngage Component */
+
+.map {
+    width: 100%;
+    position: relative;
+
+  }
+  
+  .map img {
+    max-width: 100%;
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    display: block;
+    
+  }
+
+  .map-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+  }
+
+
+  .map-content a {
+       text-decoration: none;
+  }
+
+/* .map {
+    background-image:url(./images/map.jpg);
+    background-position:center; 
+    /* width:700px;
+    /* height:400px; 
+    width: 100%; 
+ } */
+
+  .contact {
+  
+  }
