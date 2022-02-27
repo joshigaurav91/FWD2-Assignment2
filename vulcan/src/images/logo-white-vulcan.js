@@ -11,10 +11,12 @@ return (
         version="1.1"
         viewBox="0 0 1475.227 601.747"
         xmlSpace="preserve"
+        className="logo"
+        z-index="99"
     >
         <g transform="matrix(1.33333 0 0 -1.33333 0 601.747)">
         <g
-            fill="#000" // need to change this to #fff
+            fill="#fff" // need to change this to #fff
             fillOpacity="1"
             fillRule="nonzero"
             stroke="none"

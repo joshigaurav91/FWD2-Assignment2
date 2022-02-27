@@ -6,10 +6,12 @@ import Icon from '../images/logo-white-vulcan.js';
 function Header() {
     return (
         <header>
-        <Icon />
-        <TopBar />
-        <Hamburger />
-        <HeroCarasole />
+            <div className="header-container">
+                <Icon />
+                <Hamburger />
+            </div>
+            <HeroCarasole />
+            <TopBar />
         </header>
     )
 }

@@ -15,11 +15,10 @@ function TopBar() {
             </ul>
             </div>
             <div className="topbar-2">
-            <h1>{header1}</h1>
-            <Link to="/"> VIEW PRODUCTS</Link>
-            <Link to="/"> VIEW SERVICES</Link>
+                <h1>{header1}</h1>
+                <Link to="/"> VIEW PRODUCTS</Link>
+                <Link to="/"> VIEW SERVICES</Link>
             </div>
-
         </div>
         
     )

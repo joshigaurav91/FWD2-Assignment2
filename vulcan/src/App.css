@@ -1,39 +1,247 @@
+/* -----------Header CSS----------- */
+.logo{
+height: 50px;
+width: 100px;
+}
+.slick-slider{
+  z-index: 0;
+}
+.header-container{
+  background-color: rgba(54,54,54,0.75);
+  height: 60px;
+  width: 100%;
+  display:flex;
+  place-content: space-between;
+  position: absolute;
+  z-index: 999;
+  padding: 10px 0 0 8px;
+}
+/* ------------Navigation------- */
+nav {
+  background-color: rgba(54,54,54,0.75);
+  display: none;
+}
+.show nav{    
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+}
+nav ul{
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  list-style: none;
+}
+nav a{
+  display: block;
+  line-height: 50px;
+  color: white;
+  text-align: left;
+  font-size: 1.2em;
+  text-decoration: none;
+  outline: none;
+  padding-left: 1em;
+}
+nav a:hover,a:focus,a:active {
+  background: rgb(0, 157, 220,0.3);
+}
 
-.App {
+
+.topbar-1{
+  display:none;
+}
+.topbar-2{
+  top:20em;
+  display: grid;
+  gap: 1em;
+  place-items: center;
+  position:absolute;
+  color:white;
+  z-index: 1;
+}
+
+.topbar-2 a{
+  color:white;
+  border: 1px solid white;
+  max-width: fit-content;
+  text-align: center;
+  padding: 1em;
+  text-decoration: none;
+}
+.topbar-2 h1{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ---------Hamburger Menu--------------- */
+.hamburger {
+
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  right: 10px;
+}
+.hamburger-content {
+  display: block;
+  height: 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bar {
+  --transition: all 0.3s ease-in-out;
+  --bar-height: 4px;
+
+  display: block;
+  height: var(--bar-height);
+  background-color: white;
+  width: 100%;
+  position: relative;
+  top: 10px;
+  transition: var(--transition);
+  
+}
+.show .bar {
+  background-color: transparent;
+}
+
+.bar:after {
+  content: "";
+  width: 100%;
+  height: var(--bar-height);
+  top: 10px;
+  left: 0;
+  background-color: white;
+  position: absolute;
+  transition: var(--transition);
+}
+.show .bar:after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+.bar:before {
+  content: "";
+  width: 100%;
+  height: var(--bar-height);
+  top: -10px;
+  left: 0;
+  background-color: white;
+  position: absolute;
+  transition: var(--transition);
+}
+.show .bar:before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.hamburger:focus,
+.hamburger-content:focus {
+    outline: none;
+}
+
+.hamburger:focus .hamburger-content {
+    outline: 5px solid #7683C9;
+}
+
+/* --------------Footer--------------- */
+footer{
+  background-color: #009ddc;
+  text-align: center;
+  display:block;
+  padding-bottom:20px;
+  color: #fff;
+}
+.social-media{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  place-content: center space-evenly;
+  padding: 0 10%;
 }
-
-.App-link {
-  color: #61dafb;
+.social-media img{
+  width: 24px;
+  height: 24px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+footer ul{
+  list-style: none;
+}
+footer a{
+  text-decoration: none;
+}
+footer .logo{
+  width: 100%;
+}
+/* @media (min-width: 650em){
+  .hamburger{
+    display:none;
   }
-  to {
-    transform: rotate(360deg);
+} */
+
+/* nav {
+  // locally scoped variable
+  $height: 40px;
+  $border: 1px solid white;
+  
+  background-color: $brand-color-dark;
+  display: none;
+
+  .show & {
+      display: block;
   }
-}
+
+  ul {
+      @include flatten(true);
+  }
+
+  a {
+      display: block;
+      line-height: 50px;
+      border-top: $border;
+      color: $text-color-light;
+      line-height: $height;
+      text-align: center;
+      font-size: 1.2em;
+      text-decoration: none;
+      outline: none;
+      
+      #{$lps} {
+          background-color: rgba(white, 0.3);
+      }
+
+  }
+
+  @include mq($phoneLandscape) {
+  
+      display: block;
+      height: $height;
+      border-top: $border;
+
+      ul {
+          display: flex;
+      }
+
+      li {
+          flex: 1;
+      }
+
+      a {
+          line-height: $height;
+          border-right: $border;
+          border-top: $border;
+          @at-root nav li:last-child a {
+              border-right: none;
+          }
+      }
+      
+  }
+
+} */
