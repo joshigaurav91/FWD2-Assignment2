@@ -1,18 +1,17 @@
 /* UserEngage Component */
 
+/* Map Part */
 .map {
     width: 100%;
     position: relative;
-
   }
   
   .map img {
     max-width: 100%;
-    z-index: -1;
+    /* z-index: -1; */
     object-fit: cover;
     width: 100%;
     display: block;
-    
   }
 
   .map-content {
@@ -28,19 +27,52 @@
       display: flex;
   }
 
+  .map-content h3{
+    color: rgb(83, 80, 80);
+    font-size: 2em;
+    width: 60%;
+  }
 
   .map-content a {
        text-decoration: none;
+       border: 1px solid rgb(83, 80, 80);
+       color: rgb(83, 80, 80);
+       font-weight: bold;
+       padding: 9px 11px;
   }
 
-/* .map {
-    background-image:url(./images/map.jpg);
-    background-position:center; 
-    /* width:700px;
-    /* height:400px; 
-    width: 100%; 
- } */
-
+ /* Contact Part */
   .contact {
-  
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    background-color: rgb(83, 80, 80);
+    background-color: #154a66;
+
   }
+
+  .contact-color-box{
+    text-align: center;
+    padding: 150px 0;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+
+  .contact h3 {
+    font-size: 2em;
+    margin-top: 0;
+    color: white;
+    width: 60%;
+  }
+
+  .contact-color-box a {
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    padding: 9px 11px;
+}
+
+

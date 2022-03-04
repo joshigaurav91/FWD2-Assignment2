@@ -11,7 +11,7 @@ function UserEngage() {
                 </div>
             </div>
             <div className="contact">
-                <div>
+                <div className="contact-color-box">
                     <h3>READY TO SPEC VULCAN FOR YOUR PROJECT?</h3>
                     <a href="#main-nav" class="btn-menu-smscreen" id="btn-menu">CONTACT US</a>
                 </div>
