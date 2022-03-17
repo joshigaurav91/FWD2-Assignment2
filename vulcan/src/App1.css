@@ -4,6 +4,7 @@
 }
 
 
+
 /* Product Advisor Component START*/
 .machine-img{
   width: 300px;
@@ -125,12 +126,6 @@
   text-decoration: none;
 }
 
-.wave-top {   
-  z-index: 10;
-  transform: rotate(180deg);
-  margin-top: -40px;
-}
-
 /* Product Advisor Component END*/
 /* Customize Per Order Component START*/
 .CustomizePerOrder-wrapper {
@@ -237,7 +232,7 @@
     cursor: pointer;
   }
 
-  .wave-bottom img {   
+  .wave-top img {   
     z-index: 10;
     position: absolute;
     left: 0px;
@@ -290,8 +285,6 @@
     width: 100%;
   }
 }
-
-
 
 .select-wrapper label {
   color: white;

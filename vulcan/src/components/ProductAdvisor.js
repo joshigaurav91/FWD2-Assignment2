@@ -67,7 +67,7 @@ function ProductAdvisor() {
         </section>
         <div className='wave-bottom'>
               <img src={WAVE_BOTTOM} alt="wave"></img>                  
-            </div>
+        </div>
     </div>
   )
 }
