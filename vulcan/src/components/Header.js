@@ -7,11 +7,15 @@ function Header() {
     return (
         <header>
             <div className="header-container">
-                <Icon />
-                <Hamburger />
+                <div className="nav-top">
+                    <div className="logo-container logo-container-header">
+                    <Icon /> 
+                    </div>
+                    <Hamburger />
+                </div>
+                <TopBar />
             </div>
             <HeroCarasole />
-            <TopBar />
         </header>
     )
 }

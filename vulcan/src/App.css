@@ -1,21 +1,54 @@
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 /* -----------Header CSS----------- */
 .logo{
 height: 50px;
 width: 100px;
 }
+.logo-container-header {
+  padding:10px;
+}
+/* visited link */
+a:visited {
+  color: white;
+}
+
 .slick-slider{
   z-index: 0;
+  height: 100%;
 }
-.header-container{
-  background-color: rgba(54,54,54,0.75);
-  height: 60px;
-  width: 100%;
-  display:flex;
-  place-content: space-between;
-  position: absolute;
-  z-index: 999;
-  padding: 10px 0 0 8px;
+
+.slick-list {
+  height: 100%;
 }
+
+.slick-slider img{
+  object-fit: cover;
+  filter: brightness(85%);
+}
+
+.slick-dots li.slick-active button:before{
+  color: rgb(26, 166, 221);
+}
+.slick-dots li button:before{
+color: white;
+opacity: 1;
+font-size: 13px;
+}
+
+header {
+  height: 90vh;
+  position: relative;
+}
+
+
 /* ------------Navigation------- */
 nav {
   background-color: rgba(54,54,54,0.75);
@@ -47,18 +80,32 @@ nav a:hover,a:focus,a:active {
   background: rgb(0, 157, 220,0.3);
 }
 
+/* Top Header  - For Mobile */
+.nav-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 999;
+}
 
 .topbar-1{
+  width:0%;
   display:none;
+  color: white;
+  z-index: 89;
 }
 .topbar-2{
-  top:20em;
-  display: grid;
-  gap: 1em;
-  place-items: center;
-  position:absolute;
+  top:10em;
+  position: absolute;
+  width: 100%;
   color:white;
-  z-index: 1;
+  z-index: 999;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  max-width: 500px;
 }
 
 .topbar-2 a{
@@ -68,11 +115,16 @@ nav a:hover,a:focus,a:active {
   text-align: center;
   padding: 1em;
   text-decoration: none;
+  display: block;
+  margin: 0 auto 1em;
+  
 }
 .topbar-2 h1{
+  display: block;
+  position: relative;
   text-align: center;
-}
-
+  margin-bottom: 2em;
+} 
 /* ---------Hamburger Menu--------------- */
 .hamburger {
 
@@ -161,87 +213,157 @@ footer{
   display:block;
   padding-bottom:20px;
   color: #fff;
+  font-weight: bold;
+}
+footer ul{
+  place-items: center;
 }
 .social-media{
   display: flex;
-  place-content: center space-evenly;
-  padding: 0 10%;
+  place-content: center;
+  list-style: none;
+  padding: 0 1em;
 }
 .social-media img{
   width: 24px;
   height: 24px;
 }
-footer ul{
-  list-style: none;
+.social-media .contact{
+  height: 15px;
+  width: 21px;
+  padding-right: 0.5em;
+}
+.social-media li:not(:last-child) {
+  padding-right: 1em;
+}
+.social-media li:nth-child(2){
+  padding-right: 3em;
+
 }
 footer a{
   text-decoration: none;
 }
 footer .logo{
   width: 100%;
+  max-width: 100%;
+
 }
-/* @media (min-width: 650em){
+
+/* Media Queries */
+
+@media (min-width: 768px){
+
+  .topbar-1 {
+    display: flex;
+    justify-content:space-between;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1em 2em;
+  }
+
+  .topbar-1 a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .topbar-1 img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .topbar-left *{
+    padding-right:1em;
+  }
+  .topbar-right :nth-child(2n){
+    padding-left:1em;
+  }
+  .logo-container-header .logo {
+    height: auto;
+    width: 140px;
+    position: absolute;
+    left: 50%;
+    top: 2em;
+    transform: translateX(-50%)
+  }
+
   .hamburger{
     display:none;
   }
-} */
-
-/* nav {
-  // locally scoped variable
-  $height: 40px;
-  $border: 1px solid white;
+  nav{
+    display: block;
+    position: absolute;
+    width: calc(100% - 4em);
+    top: 7em;
+    margin: 0 2em;
+    left: calc(45% + 1em);
+    transform: translate(-50%, 26%);
+    max-width: 800px;
+  }
+  nav ul{
+    background-color: rgba(54,54,54,0.75);
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  nav li {
+    flex: 1;
+  }
   
-  background-color: $brand-color-dark;
-  display: none;
-
-  .show & {
-      display: block;
+  nav a {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
   }
-
-  ul {
-      @include flatten(true);
+  .logo{
+    grid-area: logo;
+    height:65%;
   }
-
-  a {
-      display: block;
-      line-height: 50px;
-      border-top: $border;
-      color: $text-color-light;
-      line-height: $height;
-      text-align: center;
-      font-size: 1.2em;
-      text-decoration: none;
-      outline: none;
-      
-      #{$lps} {
-          background-color: rgba(white, 0.3);
-      }
-
+  .social-media{
+    grid-area: social;
+    margin-bottom: 0px;
+    margin-top: 40px;
   }
-
-  @include mq($phoneLandscape) {
-  
-      display: block;
-      height: $height;
-      border-top: $border;
-
-      ul {
-          display: flex;
-      }
-
-      li {
-          flex: 1;
-      }
-
-      a {
-          line-height: $height;
-          border-right: $border;
-          border-top: $border;
-          @at-root nav li:last-child a {
-              border-right: none;
-          }
-      }
-      
+  footer p{
+    grid-area: text;
+    margin-top: 0px;
   }
+  footer {
+    display: grid;
+    grid-template: 'logo social'
+                    'logo text';
+    place-items: center;
+    white-space: nowrap;
+  }
+  footer .logo{
+    max-width: 40%;
+  }
+}
 
-} */
+@media (min-width: 992px) {
+  /* nav{
+    max-width: calc(75% - 8em);
+    margin: 0 8em;
+  } */
+
+  /* .topbar-2{
+    max-width: 600px;
+    margin-left: calc(10% - 1rem);
+  } */
+  footer {
+    grid-template: "logo social text" /40%;
+    justify-content: center;
+    font-size: 13px;
+  }
+  footer p{
+    margin-top:40px;
+  }
+  .social-media{
+    margin-bottom: 1em;
+  }
+  footer .logo{
+    width:40%;
+  }
+}
