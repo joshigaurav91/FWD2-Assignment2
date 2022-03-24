@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 
 function Nav() {
 
@@ -8,13 +8,13 @@ function Nav() {
 
     return (
         <nav onClick={closeNav}>
-        <ul>
-            <li><NavLink to="/">ABOUT</NavLink></li>
-            <li><NavLink to="/">PRODUCTS</NavLink></li>
-            <li><NavLink to="/">SERVICES</NavLink></li>
-            <li><NavLink to="/">PARTS</NavLink></li>
-            <li><NavLink to="/">NEWS</NavLink></li>
-            <li><NavLink to="/">CONTACT</NavLink></li>
+        <ul>         
+             <li><a href="#">ABOUT</a></li>
+             <li><a href="#">PRODUCTS</a></li>
+             <li><a href="#">SERVICES</a></li>
+             <li><a href="#">PARTS</a></li>
+             <li><a href="#">NEWS</a></li>
+             <li><a href="#">CONTACT</a></li>
         </ul>
         </nav>
     )

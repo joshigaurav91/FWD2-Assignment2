@@ -4,6 +4,15 @@
 }
 
 
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
 
 /* Product Advisor Component START*/
 .machine-img{
@@ -232,11 +241,11 @@
     cursor: pointer;
   }
 
-  .wave-top img {   
+  .wave-top{   
     z-index: 10;
     position: absolute;
     left: 0px;
-    margin-top: 160px;
+    margin-top: -90px;    
     width: 100%;
   }
 }

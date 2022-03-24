@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+
 import email from '../images/elusive-mail-circled-white.svg';
 import call from '../images/elusive-phone-circled-white.svg'
 
@@ -8,8 +8,8 @@ function TopBar() {
         <div className="topbar-cantainer">
             <div className="topbar-1">
                 <div className="topbar-left">
-                    <Link to="/">INSTALL MAP</Link>
-                    <Link to="/">PRODUCT LITERATURE</Link>
+                    <a href="/">INSTALL MAP</a>
+                    <a href="/">PRODUCT LITERATURE</a>
                 </div>
                 <div className="topbar-right">
                     <a href="#0"><img src={call} alt='phone logo'/><span>+1 712-642-2755</span></a>
@@ -19,8 +19,8 @@ function TopBar() {
             <div className="topbar-2">
                 {/* <div className="topbar-2-container"> */}
                     <h1>{header1}</h1>
-                    <Link to="/"> VIEW PRODUCTS</Link>
-                    <Link to="/"> VIEW SERVICES</Link>
+                    <a href="/"> VIEW PRODUCTS</a>
+                    <a href="/"> VIEW SERVICES</a>
                 {/* </div> */}
             </div>
         </div>
