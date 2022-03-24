@@ -49,7 +49,6 @@
     display: flex;
     background-color: rgb(83, 80, 80);
     background-color: #154a66;
-
   }
 
   .contact-color-box{
@@ -74,5 +73,43 @@
     font-weight: bold;
     padding: 9px 11px;
 }
+
+.wrapper {
+  position: relative;
+}
+
+.wave-below-userengage {   
+  z-index: 10;
+  position: absolute;
+  left: 0px;
+  bottom: 30px;
+  height: 100px;
+  /* margin-top: 80px; */
+  width: 100%;
+}
+
+@media (min-width: 890px){
+  .user-engage-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .map img {
+    height: 100%;
+  }
+
+  .map-content a {
+    background-color: lightblue;
+    color: white;
+    border-color: lightblue;
+  }
+
+  .contact-color-box a {
+    background-color: lightblue;
+    color: white;
+    border-color: lightblue;
+  }
+}
+
 
 

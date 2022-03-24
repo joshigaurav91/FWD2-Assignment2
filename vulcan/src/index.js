@@ -6,6 +6,7 @@ import './Form.css'
 import './About.css'
 import './Video.css'
 import './About.css'
+// import './App.css'
 import App from './App';
 
 ReactDOM.render(

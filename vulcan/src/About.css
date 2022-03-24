@@ -11,14 +11,10 @@
     display: flex;
 }
 
-.about-container img {
-
-}
-
 .about-content {
-    /* justify-content: center; */
     text-align: center;
     margin: auto;
+
 }
 
 .about-content h3 {
@@ -35,4 +31,26 @@
     text-decoration: none;
     border: 1px solid white;
     padding: 10px;
+    font-weight: bold;
+}
+
+
+/* // 1300, 1024, 980, 890 */
+/* 484 for the wave */
+
+
+@media (min-width: 890px){
+    .about-content {
+        text-align: center;
+        margin: auto;
+        width: 60%;
+    }
+
+@media (min-width: 1024px){
+    .about-content {
+        text-align: center;
+        margin: auto;
+        width: 40%;
+    }
+}
 }

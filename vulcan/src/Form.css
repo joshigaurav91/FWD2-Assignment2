@@ -43,3 +43,35 @@
     font-size: 16px;
     padding: 0 15px;
 }
+
+@media (min-width: 890px){
+
+    .sign-up-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 700px;
+    }
+    .sign-up-label {
+        white-space: nowrap; 
+        margin-right: 10px;
+        /* flex: 1; */
+        /* margin-top: 20px;
+        margin-left: 50px; */
+    }
+    .input-row{
+        /* flex: 1 */
+    }
+}
+
+@media (min-width: 1200px){
+    .sign-up-block {
+        justify-content: space-around;
+    }
+    .sign-up-label {
+        /* margin-left: 250px; */
+    }
+    .input-row{
+        flex: 1
+    }
+}
