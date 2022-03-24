@@ -3,7 +3,6 @@
   
 }
 
-
 html {
   box-sizing: border-box;
 }
@@ -11,8 +10,6 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
-
 
 /* Product Advisor Component START*/
 .machine-img{
@@ -139,7 +136,7 @@ html {
 /* Customize Per Order Component START*/
 .CustomizePerOrder-wrapper {
   background-color: #154a66;
-  margin-top: 220px;
+  margin-top: 320px;
   padding-bottom: 5em;  
 }
 
@@ -176,6 +173,14 @@ html {
   margin-left: 25px;
   margin-right: 25px;
 }
+.wave-top img {   
+  z-index: 10;
+  position: absolute; 
+  max-width: 100%;
+  left: 0px;
+  margin-top: -20px;
+  height: auto;
+}
 
 @media only screen and (min-width: 1200px) {
   .select-wrapper {
@@ -210,6 +215,15 @@ html {
     left: 0px;
     margin-top: 120px;
     width: 100%;
+  }
+
+  .wave-top img {   
+    z-index: 10;
+    position: absolute; 
+    max-width: 100%;
+    left: 0px;
+    margin-top: 120px;
+    height: auto;
   }
 }
 
@@ -299,7 +313,5 @@ html {
   color: white;
   text-align: left;
 }
-
-
 
 /* Customize Per Order Component END*/
