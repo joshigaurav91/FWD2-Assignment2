@@ -11,8 +11,8 @@ function ProductAdvisor() {
       
     <div className='customize-order-wrapper'>
       <div className='wave-top'>
-              <img src={WAVE_TOP} alt="wave"></img>                  
-            </div>
+          <img src={WAVE_TOP} alt="wave"></img>                  
+      </div>
       <section className='productAdvisor'>
         <div className='text'>
         <h2 id="header-productAdvisor">CUSTOMIZED PER ORDER</h2>
