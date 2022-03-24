@@ -1,0 +1,115 @@
+/* UserEngage Component */
+
+/* Map Part */
+.map {
+    width: 100%;
+    position: relative;
+  }
+  
+  .map img {
+    max-width: 100%;
+    /* z-index: -1; */
+    object-fit: cover;
+    width: 100%;
+    display: block;
+  }
+
+  .map-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+  }
+
+  .map-content h3{
+    color: rgb(83, 80, 80);
+    font-size: 2em;
+    width: 60%;
+  }
+
+  .map-content a {
+       text-decoration: none;
+       border: 1px solid rgb(83, 80, 80);
+       color: rgb(83, 80, 80);
+       font-weight: bold;
+       padding: 9px 11px;
+  }
+
+ /* Contact Part */
+  .contact {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    background-color: rgb(83, 80, 80);
+    background-color: #154a66;
+  }
+
+  .contact-color-box{
+    text-align: center;
+    padding: 150px 0;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+
+  .contact h3 {
+    font-size: 2em;
+    margin-top: 0;
+    color: white;
+    width: 60%;
+  }
+
+  .contact-color-box a {
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    padding: 9px 11px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.wave-below-userengage {   
+  z-index: 10;
+  position: absolute;
+  left: 0px;
+  bottom: 30px;
+  height: 100px;
+  /* margin-top: 80px; */
+  width: 100%;
+}
+
+@media (min-width: 890px){
+  .user-engage-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .map img {
+    height: 100%;
+  }
+
+  .map-content a {
+    background-color: lightblue;
+    color: white;
+    border-color: lightblue;
+  }
+
+  .contact-color-box a {
+    background-color: lightblue;
+    color: white;
+    border-color: lightblue;
+  }
+}
+
+
+

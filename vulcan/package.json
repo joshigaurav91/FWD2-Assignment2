@@ -37,6 +37,10 @@
       "last 1 safari version"
     ]
   },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
     "react-slick": "^0.28.1",
     "slick-carousel": "^1.8.1"
