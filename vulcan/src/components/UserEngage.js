@@ -18,8 +18,9 @@ function UserEngage() {
                         <a href="#main-nav" class="btn-menu-smscreen" id="btn-menu">CONTACT US</a>
                     </div>
                 </div>
+                <img className="wave-below-userengage" src={waveBlueLight} alt="wave" />
             </div>
-            <img className="wave-below-userengage" src={waveBlueLight} alt="wave" />
+            
         </div>
     )
 }

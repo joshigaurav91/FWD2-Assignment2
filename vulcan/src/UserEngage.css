@@ -5,6 +5,10 @@
     width: 100%;
     position: relative;
   }
+
+  .user-engage-container{
+    position: relative;
+  }
   
   .map img {
     max-width: 100%;
@@ -78,15 +82,20 @@
   position: relative;
 }
 
-.wave-below-userengage {   
-  z-index: 10;
-  position: absolute;
-  left: 0px;
-  top: 3610px;
-  height: 100px;
-  /* margin-top: 80px; */
-  width: 100%;
-}
+
+  .wave-below-userengage {   
+    z-index: 10;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    border: 1px solid red;
+    width: 100%;
+  }
+
+
+
+
+
 
 @media (min-width: 890px){
   .user-engage-container {
