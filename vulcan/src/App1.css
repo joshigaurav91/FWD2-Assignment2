@@ -322,6 +322,15 @@ html {
     margin-left: 25px;
     margin-right: 25px;
   }
+
+  .wave-top img {   
+    z-index: 10;
+    position: absolute; 
+    max-width: 100%;
+    left: 0px;
+    top: -150px;    
+    height: auto;
+  }
   select {
     width: 85vw;
     height: 35px;
@@ -356,6 +365,14 @@ html {
       left: 0px;
       top: 1510px;
       width: 100%;
+    }
+    .wave-top img {   
+      z-index: 10;
+      position: absolute; 
+      max-width: 100%;
+      left: 0px;
+      top: -130px;    
+      height: auto;
     }
   }
 
