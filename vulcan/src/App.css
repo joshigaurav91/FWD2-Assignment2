@@ -36,6 +36,10 @@ a:visited {
   filter: brightness(85%); 
 }
 
+.slick-arrow.slick-next {
+  display: none!important;
+}
+
 .slick-dots li.slick-active button:before{
   color: rgb(26, 166, 221);
 }
