@@ -14,7 +14,7 @@ function ProductAdvisor() {
           <img src={WAVE_TOP} alt="wave"></img>                  
       </div>
       <section className='productAdvisor'>
-        <div className='text'>
+        <div className='text-header'>
         <h2 id="header-productAdvisor">CUSTOMIZED PER ORDER</h2>
         <p className='headline'>Just as no two treatment plants are the same, no two of our screening, 
             grit handling or sludge thickening products are either. We'll help determine exactly what you need.</p>
