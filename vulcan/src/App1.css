@@ -196,7 +196,7 @@ html {
   position: absolute; 
   max-width: 100%;
   left: 0px;
-  top: 750px;    
+  top: 550px;    
   height: auto;
 }
 
@@ -242,7 +242,7 @@ html {
     z-index: 10;
     position: absolute;
     left: 0px;
-    top: 1587px;
+    top: 1387px;
     width: 100%;
 
   }
@@ -282,19 +282,17 @@ html {
     position: absolute; 
     max-width: 100%;
     left: 0px;
-    top: 750px;    
+    top: 550px;    
     height: auto;
   }
   .wave-bottom img {   
     z-index: 10;
     position: absolute;
     left: 0px;
-    top: 1496px;
+    top: 1310px;
     width: 100%;
    
   }
-
-
 }
 
 @media only screen and (max-width: 1199px) {
@@ -330,16 +328,28 @@ html {
     position: absolute;
     left: 0px;        
     max-width: 100%;
-    top: 780px;    
+    top: 580px;    
   }
   .wave-bottom img {   
     z-index: 10;
     position: absolute;
     left: 0px;
-    top: 1530px;
+    top: 1310px;
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 1055px) { 
+
+  .wave-bottom img {   
+    z-index: 10;
+    position: absolute;
+    left: 0px;
+    top: 1340px;
+    width: 100%;
+  }
+}
+
 
 @media only screen and (max-width: 850px) {
   .select-wrapper {
@@ -373,14 +383,14 @@ html {
     position: absolute;
     left: 0px;        
     max-width: 100%;    
-    top: 795px;    
+    top: 600px;    
   }
 
   .wave-bottom img {   
     z-index: 10;
     position: absolute;
     left: 0px;
-    top: 1550px;
+    top: 1370px;
     width: 100%;
   }
 }
@@ -390,7 +400,7 @@ html {
     z-index: 10;
     position: absolute;
     left: 0px;
-    top: 1560px;
+    top: 1370px;
     width: 100%;
   }
 
@@ -399,7 +409,7 @@ html {
     position: absolute;
     left: 0px;        
     max-width: 100%;    
-    top: 810px;    
+    top: 610px;    
   }
 
 }
@@ -409,7 +419,7 @@ html {
     z-index: 10;
     position: absolute;
     left: 0px;
-    top: 1540px;
+    top: 1350px;
     width: 100%;
   }
 
@@ -418,7 +428,7 @@ html {
     position: absolute;
     left: 0px;        
     max-width: 100%;
-    top: 810px;    
+    top: 625px;    
   }
 
   .h2-headersmall {
@@ -435,7 +445,7 @@ html {
     z-index: 10;
     position: absolute;
     left: 0px;
-    top: 1550px;
+    top: 1350px;
     width: 100%;
   }
 
@@ -444,7 +454,7 @@ html {
     position: absolute;
     left: 0px;        
     max-width: 100%;
-    top: 820px;    
+    top: 620px;    
   }
 }
 
@@ -453,7 +463,7 @@ html {
     z-index: 10;
     position: absolute;
     left: 0px;
-    top: 1940px;
+    top: 1750px;
     width: 100%;
   }
   .wave-top img{   
@@ -461,7 +471,7 @@ html {
     position: absolute;
     left: 0px;        
     max-width: 100%;    
-    top: 825px;    
+    top: 625px;    
   }
 
   .h2-headersmall {
@@ -474,7 +484,7 @@ html {
     z-index: 10;
     position: absolute;
     left: 0px;
-    top: 1950px;
+    top: 1750px;;
     width: 100%;
   }
 }
