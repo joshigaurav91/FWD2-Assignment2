@@ -12,9 +12,9 @@ function Footer() {
                 <li><img src={facebook} alt="facebook"/></li>
                 <li><img src={linkedin} alt="linkedin"/></li>
                 <li><img className="contact" src={call} alt='phone logo'/>+1 712-642-2755</li>
-                <li><a href="#"><img className="contact" src={email} alt='contact logo'/>CONTACT US</a></li>
+                <li><img className="contact" src={email} alt='contact logo'/><a href="#">CONTACT US</a></li>
             </ul>
-            <p>COPYRIGHT 2017. ALL rights reserved.</p>
+            <p>COPYRIGHT 2017. ALL RIGHTS RESERVED.</p>
         </footer>
     )
 }

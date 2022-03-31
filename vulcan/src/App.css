@@ -224,19 +224,38 @@ footer{
 footer ul{
   place-items: center;
 }
+
+footer li {
+  display: flex;
+  justify-content: center;
+}
+
+footer .contact {
+  background-color: #009ddc;
+}
+
+footer a {
+  color: white;
+}
+
 .social-media{
   display: flex;
   place-content: center;
   list-style: none;
   padding: 0 1em;
 }
+
+.social-media .contact {
+  height: 15px;
+  margin-top: 5px;
+}
+
 .social-media img{
   width: 24px;
   height: 24px;
 }
 .social-media .contact{
   height: 15px;
-  width: 21px;
   padding-right: 0.5em;
 }
 .social-media li:not(:last-child) {
@@ -332,10 +351,17 @@ footer .logo{
     margin-bottom: 0px;
     margin-top: 40px;
   }
+
+  .social-media p {
+    margin: 16px 0;
+    padding: 16px;
+  }
+
   footer p{
     grid-area: text;
-    margin-top: 0px;
+    /* margin-top: 0px; */
   }
+
   footer {
     display: grid;
     grid-template: 'logo social'
@@ -362,6 +388,7 @@ footer .logo{
     grid-template: "logo social text" /40%;
     justify-content: center;
     font-size: 13px;
+    padding-right: 50px;
   }
   footer p{
     margin-top:40px;
