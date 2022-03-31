@@ -2,7 +2,6 @@
   text-align: center;
   
 }
-/* TEST COMMIT */
 
 html {
   box-sizing: border-box;
@@ -23,7 +22,7 @@ html {
 
 
 .customize-order-wrapper {
-  display: relative!important;
+  position: relative;
   margin-top: 100px;
 }
 
@@ -80,13 +79,6 @@ html {
   }
   .h2-headersmall:hover {
     color: #009ddc!important;
-  }
-  .wave-bottom{   
-    z-index: 10;
-    position: absolute;
-    left: 0px;
-    top: 980px;
-    width: 100%;    
   }
 }
 @media (min-width: 890px) {
@@ -196,22 +188,11 @@ html {
   position: absolute; 
   max-width: 100%;
   left: 0px;
-  top: 550px;    
+  top: -170px;    
   height: auto;
 }
 
-.wave-bottom img {   
-  z-index: 10;
-  position: absolute;
-  left: 0px;
-  top: 1996px;
-  width: 100%;
-  
-}
-
-
 @media only screen and (min-width: 1301px) {
-
   .select-wrapper {
     display: flex;
     justify-content: center;
@@ -242,9 +223,8 @@ html {
     z-index: 10;
     position: absolute;
     left: 0px;
-    top: 1310px;
+    top: 580px;
     width: 100%;
-
   }
 
 }
@@ -276,22 +256,12 @@ html {
     border: none;
     cursor: pointer;
   }
-
-  .wave-top img {   
-    z-index: 10;
-    position: absolute; 
-    max-width: 100%;
-    left: 0px;
-    top: 550px;    
-    height: auto;
-  }
   .wave-bottom img {   
     z-index: 10;
     position: absolute;
     left: 0px;
-    top: 1210px;
+    top: 480px;
     width: 100%;
-   
   }
 }
 
@@ -322,34 +292,27 @@ html {
     border: none;
     cursor: pointer;
   }
+}
 
-  .wave-top img{   
-    z-index: 10;
-    position: absolute;
-    left: 0px;        
-    max-width: 100%;
-    top: 580px;    
-  }
+@media only screen and (max-width: 1300px) { 
   .wave-bottom img {   
     z-index: 10;
     position: absolute;
     left: 0px;
-    top: 1240px;
-    width: 100%;
+    top: 500px;
+    width: 100%;  
   }
 }
 
-@media only screen and (max-width: 1055px) { 
-
+@media only screen and (max-width: 890px) {
   .wave-bottom img {   
     z-index: 10;
     position: absolute;
     left: 0px;
-    top: 1250px;
-    width: 100%;
+    top: 1470px;
+    width: 100%;  
   }
 }
-
 
 @media only screen and (max-width: 850px) {
   .select-wrapper {
@@ -358,6 +321,15 @@ html {
     flex-wrap: wrap;
     margin-left: 25px;
     margin-right: 25px;
+  }
+
+  .wave-top img {   
+    z-index: 10;
+    position: absolute; 
+    max-width: 100%;
+    left: 0px;
+    top: -150px;    
+    height: auto;
   }
   select {
     width: 85vw;
@@ -377,60 +349,7 @@ html {
     border: none;
     cursor: pointer;
   }
-
-  .wave-top img{   
-    z-index: 10;
-    position: absolute;
-    left: 0px;        
-    max-width: 100%;    
-    top: 600px;    
-  }
-
-  .wave-bottom img {   
-    z-index: 10;
-    position: absolute;
-    left: 0px;
-    top: 1285px;
-    width: 100%;
-  }
 }
-
-@media only screen and (max-width: 622px) { 
-  .wave-bottom img {   
-    z-index: 10;
-    position: absolute;
-    left: 0px;
-    top: 1315px;
-    width: 100%;
-  }
-
-  .wave-top img{   
-    z-index: 10;
-    position: absolute;
-    left: 0px;        
-    max-width: 100%;    
-    top: 610px;    
-  }
-
-}
-
-@media only screen and (max-width: 515px) { 
-  .wave-bottom img {   
-    z-index: 10;
-    position: absolute;
-    left: 0px;
-    top: 1300px;
-    width: 100%;
-  }
-
-  .wave-top img{   
-    z-index: 10;
-    position: absolute;
-    left: 0px;        
-    max-width: 100%;
-    top: 625px;    
-  }
-
   .h2-headersmall {
     font-size: 18px!important;
   }
@@ -438,74 +357,68 @@ html {
   hr {
     margin: 20px;
   }
-}
 
-@media only screen and (max-width: 440px) { 
-  .wave-bottom img {  
-    z-index: 10;
-    position: absolute;
-    left: 0px;
-    top: 1310px;
-    width: 100%;
+  @media only screen and (max-width: 620px) { 
+    .wave-bottom img {   
+      z-index: 10;
+      position: absolute;
+      left: 0px;
+      top: 1510px;
+      width: 100%;
+    }
+    .wave-top img {   
+      z-index: 10;
+      position: absolute; 
+      max-width: 100%;
+      left: 0px;
+      top: -130px;    
+      height: auto;
+    }
   }
-}
-@media only screen and (max-width: 396px) { 
-  .wave-bottom img {   
-    z-index: 10;
-    position: absolute;
-    left: 0px;
-    top: 1310px;
-    width: 100%;
-}
 
-  .wave-top img{   
-    z-index: 10;
-    position: absolute;
-    left: 0px;        
-    max-width: 100%;
-    top: 620px;    
-  }
-}
+  @media only screen and (max-width: 497px) { 
+    .wave-bottom img {  
+      z-index: 10;
+      position: absolute;
+      left: 0px;
+      top: 1540px;
+      width: 100%;
+    }}
 
-@media only screen and (max-width: 369px) { 
-  .wave-bottom img {   
-    z-index: 10;
-    position: absolute;
-    left: 0px;
-    top: 1350px;
-    width: 100%;
-}
-}
+    @media only screen and (max-width: 370px) { 
+      .wave-bottom img { 
+        z-index: 10;
+        position: absolute;
+        left: 0px;
+        top: 1580px;
+        width: 100%;
+
+      }}
+
 
 @media only screen and (max-width: 363px) {
-  .wave-bottom img {   
-    z-index: 10;
-    position: absolute;
-    left: 0px;
-    top: 1760px;
-    width: 100%;
-  }
   .wave-top img{   
     z-index: 10;
     position: absolute;
     left: 0px;        
     max-width: 100%;    
-    top: 625px;    
+    top: -120px;     
   }
 
+  .wave-bottom img { 
+    z-index: 10;
+    position: absolute;
+    left: 0px;
+    top: 1990px;
+    width: 100%;
+  }
   .h2-headersmall {
     margin-top: 20px;
   }
 }
 
 @media only screen and (max-width: 300px) {
-  .wave-bottom img {   
-    z-index: 10;
-    position: absolute;
-    left: 0px;
-    top: 1780px;
-    width: 100%;
-  }
+
 }
 
 .select-wrapper label {
